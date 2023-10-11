@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 if(!Object.hasOwn){
-  Object.hasOwn = function(obj, key) => {
+  Object.hasOwn = function(obj, key) {
     return typeof obj === 'object' && obj.hasOwnProperty(key);
   }
 }
