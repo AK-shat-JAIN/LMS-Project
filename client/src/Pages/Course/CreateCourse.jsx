@@ -54,6 +54,16 @@ function CreateCourse(){
             return;
         }
 
+        if(userInput.title.length < 6){
+            toast.error("Title must be atleast 6 characters long");
+            return;
+        }
+
+        if(userInput.description.length < 8){
+            toast.error("Description must be atleast 8 characters long");
+            return;
+        }
+
         const formData = new FormData();
         formData.append("title", userInput.title);
         formData.append("description", userInput.description);
