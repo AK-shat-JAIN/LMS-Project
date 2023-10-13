@@ -67,6 +67,12 @@ function Signup(){
             return;
         }
 
+        //chrcking password length
+        if(signupData.password.length < 8){
+            toast.error("Password should be atleast 8 characters long");
+            return;
+        }
+
         //checking email validity
         if(!isValidEmail(signupData.email)){
             toast.error("Please enter a valid email");
