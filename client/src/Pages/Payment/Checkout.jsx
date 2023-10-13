@@ -86,7 +86,7 @@ function Checkout(){
                             <p>*Terms and Conditions applied</p>
                         </div>
                         <button type="submit" className="absolute bottom-0 left-0 w-full text-xl font-bold rounded-bl-lg rounded-br-lg py-2 bg-yellow-500 hover:bg-yelllow-600 transition-all ease-in-out duration-300">
-                            {razorpayKey ? "Buy Now" : "Loading..."}
+                            {razorpayKey && subscription_id ? "Buy Now" : "Loading..."}
                         </button>
                     </div>
                 </div>
