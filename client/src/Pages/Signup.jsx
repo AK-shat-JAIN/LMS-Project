@@ -62,8 +62,8 @@ function Signup(){
         }
 
         //checking name field length
-        if(signupData.fullName.length < 5){
-            toast.error("Name should be atleast 5 characters long");
+        if(signupData.fullName.length < 8){
+            toast.error("Name should be atleast 8 characters long");
             return;
         }
 
